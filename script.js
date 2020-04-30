@@ -12,11 +12,10 @@ const bindButton = (button) => {
 }
 
 const copySnippet = (e) => {
-    copyToClipboard(e.currentTarget.parentElement.querySelector("code").innerText);
+    copyToClipboard(e.currentTarget.parentElement.nextElementSibling.querySelector("code").innerText);
 }
 
 const placeBindedButtons = (answers) => {
-
 
     // Add buttons to each code snippet
     answers.forEach((answer) => {
@@ -27,8 +26,9 @@ const placeBindedButtons = (answers) => {
         snippets.forEach((snippet) => {
 
             //Places and binds button
-            snippet.insertAdjacentHTML("beforeend", buttonHtml);
-            const newButton = snippet.querySelector(".clipboardBtn");
+            snippet.insertAdjacentHTML("beforebegin", buttonDiv);
+            //const newButton = snippet.querySelector(".clipboardBtn");
+            const newButton = snippet.previousElementSibling.children[0]
             bindButton(newButton);
         })
 
@@ -36,12 +36,15 @@ const placeBindedButtons = (answers) => {
 }
 
 
-
     // Array of answer containers
     const answers = document.querySelectorAll(".answer");
 
     // Button to be inserted
-    const buttonHtml = `<button class='clipboardBtn'>copy</button>`;
+    const buttonDiv = `<div class='buttonContainer'>
+                            <button class='clipboardBtn'>
+                                Copy
+                            </button>
+                        </div>`;
 
     placeBindedButtons(answers);
 
@@ -60,4 +63,6 @@ const placeBindedButtons = (answers) => {
     // Style Button
     // Extension icon
     // Extension menu
-    // CSS?
+
+
+
