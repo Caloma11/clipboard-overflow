@@ -1,6 +1,44 @@
+const commentMap = {
+        "ruby": "#",
+        "javascript": "//",
+        "java": "//",
+        "python": "#",
+        "c#": "//",
+        "c": "//",
+        "php": "//",
+        "lua": "--",
+        "haskell": "--",
+        "swift": "//",
+        "go": "//",
+        "sql": "--",
+        "r": "#",
+        "perl": "#",
+        "kotlin": "//",
+        "rust": "//",
+        "scheme": ";;;",
+        "erlang": "%",
+        "scala": "//",
+        "elixir": "#",
+        "c++": "//",
+        "dart": "//"
+    }
+
+
+
+// Finds the correct comment symbol according to the language of the question
+const getCommentCharacter = (tags) => {
+    const languages = Object.keys(commentMap);
+    const intersection = languages.filter(x => tags.includes(x));
+    if (intersection.length > 0) {
+       return commentMap[intersection[0]];
+    }
+    return "";
+}
+
 const copyToClipboard = (text) => {
   const pseudoElement = document.createElement('textarea');
-  pseudoElement.value = text;
+  const url = window.location.href;
+  pseudoElement.value = `${commentCharacter} ${url}\n${text}`;
   document.body.appendChild(pseudoElement);
   pseudoElement.select();
   document.execCommand('copy');
@@ -36,19 +74,22 @@ const placeBindedButtons = (answers) => {
 }
 
 
-    // Array of answer containers
-    const answers = document.querySelectorAll(".answer");
 
-    // Button to be inserted
-    const buttonDiv = `<div class='buttonContainer'>
-                            <button class='clipboardBtn'>
-                                Copy
-                            </button>
-                        </div>`;
+// Programming language tags
+const tags = document.querySelector(".post-taglist").innerText.split(" ");
+const commentCharacter = getCommentCharacter(tags);
 
-    placeBindedButtons(answers);
+// Array of answer containers
+const answers = document.querySelectorAll(".answer");
 
+// Button to be inserted
+const buttonDiv = `<div class='buttonContainer'>
+                        <button class='clipboardBtn'>
+                            Copy
+                        </button>
+                    </div>`;
 
+placeBindedButtons(answers);
 
 
 
@@ -59,10 +100,6 @@ const placeBindedButtons = (answers) => {
 
 
 // Todo =>
-    // Check if div is scrollable sideways and move button accordingly if scrolled
-    // Style Button
     // Extension icon
-    // Extension menu
-
-
+    // Extension menu -> Turn off comment
 
