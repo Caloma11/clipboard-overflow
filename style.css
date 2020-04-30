@@ -1,0 +1,17 @@
+#answers pre {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.clipboardBtn {
+    font-size: 8px;
+    position: absolute !important;
+    right: 0px;
+    bottom: 0px;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+
+
+

@@ -13,7 +13,9 @@
       "matches": [
         "https://stackoverflow.com/*"
       ],
-      "js": ["script.js"]
+      "js": ["script.js"],
+      "css": [ "style.css" ]
+
     }
   ],
     "page_action": {
