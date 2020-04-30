@@ -3,6 +3,10 @@
     "version": "1.0",
     "description": "Copy code snippets from Stack Overflow by clicking on a button.",
     "homepage_url": "https://github.com/Caloma11/clipboard-overflow",
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
     "permissions": ["storage", "declarativeContent"],
     "manifest_version": 2,
     "background": {
