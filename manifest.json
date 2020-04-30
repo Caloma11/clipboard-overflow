@@ -2,19 +2,20 @@
     "name": "ClipboardOverflow",
     "version": "1.0",
     "description": "Copy code snippets from Stack Overflow by clicking on a button.",
+    "homepage_url": "https://github.com/Caloma11/clipboard-overflow",
     "permissions": ["storage", "declarativeContent"],
     "manifest_version": 2,
     "background": {
-      "scripts": ["background.js"],
+      "scripts": ["js/background.js"],
       "persistent": false
     },
     "content_scripts": [
     {
       "matches": [
-        "https://stackoverflow.com/*"
+        "https://stackoverflow.com/questions/*"
       ],
-      "js": ["script.js"],
-      "css": [ "style.css" ]
+      "js": ["js/script.js"],
+      "css": [ "css/style.css" ]
 
     }
   ],
