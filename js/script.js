@@ -24,7 +24,6 @@ const commentMap = {
     }
 
 
-
 // Finds the correct comment symbol according to the language of the question
 const getCommentCharacter = (tags) => {
     const languages = Object.keys(commentMap);
@@ -35,6 +34,7 @@ const getCommentCharacter = (tags) => {
     return "";
 }
 
+// Copies the snippet to the clipboard along with the source url as a comment
 const copyToClipboard = (text) => {
   const pseudoElement = document.createElement('textarea');
   const url = window.location.href;
@@ -89,6 +89,7 @@ const buttonDiv = `<div class='buttonContainer'>
                         </button>
                     </div>`;
 
+// Injects buttons in the page
 placeBindedButtons(answers);
 
 
