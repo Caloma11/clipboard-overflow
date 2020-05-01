@@ -1,18 +1,3 @@
-<div style="padding: 10px; margin-bottom: 10px">
-    <input type="checkbox" id="like" name="comment">
-    <label for="comment">
-
-        Display commented source URL
-    </label>
-</div>
-
-<div id="status"></div>
-<button id="save" class="btnSave">Save</button>
-
-<script src="options.js"></script>
-
-
-
 <style>
     .btnSave {
         border: 1px solid rgb(218, 220, 224);
@@ -27,9 +12,43 @@
         font-size: 13px;
     }
 
+    .btnSave:focus {
+        outline: none;
+    }
+
+    .btnSave:active {
+      transform: translateY(1px);
+      box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.4);
+    }
+
     label {
         font-family: Roboto, Ubuntu, Arial, sans-serif;
         font-size: 13px;
+        color: rgb(32, 33, 36);
     }
 
+    #status {
+        padding: 10px;
+        color: rgb(32, 33, 36);
+    }
+
+    .buttonContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
 </style>
+
+<div style="padding: 10px; margin-bottom: 10px">
+    <input type="checkbox" id="saveComments" name="comment">
+    <label for="comment">Display commented source URL</label>
+</div>
+
+<div class="buttonContainer">
+    <button id="save" class="btnSave">Save</button>
+    <div id="status"></div>
+    <span></span>
+</div>
+
+<script src="js/options.js"></script>
