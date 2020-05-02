@@ -1,3 +1,7 @@
+.answer pre {
+    border-radius: 3px 0 3px 3px;
+}
+
 .buttonContainer {
     height: 22px;
     display: flex;
@@ -6,13 +10,19 @@
 }
 
 .clipboardBtn {
-    font-size: 8px;
+    font-size: 8px !important;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
-    right: 0px;
-    bottom: 0px;
+    right: 0px !important;
+    bottom: 0px !important;
     font-weight: bold !important;
-    color: white !important;
+    border: none !important;
+    color: #0095ff !important;
+    background: linear-gradient(0deg, rgba(239,240,241,1) 5%, rgba(225,236,244,1) 80%);
+}
+
+.clipboardBtn:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 1px -1px 2px 0px;
 }
 
 .clipboardBtn:active {
