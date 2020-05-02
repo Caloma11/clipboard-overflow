@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "ClipboardOverflow",
+    "description": "Copy code snippets from Stack Overflow by clicking on a button."
+  },
+  "appDesc": {
+    "message": "Copy code snippets from Stack Overflow by clicking on a button.",
+    "description":"Get the code snippets from Stack Overflow on your clipboard by clicking on a button. No more side scrolling, no more selecting with the mouse. Features a unobstrusive UI."
+  }
+}
