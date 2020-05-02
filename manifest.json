@@ -1,8 +1,9 @@
   {
     "name": "ClipboardOverflow",
-    "version": "1.0",
+    "version": "0.0.0.1",
     "description": "Copy code snippets from Stack Overflow by clicking on a button.",
     "homepage_url": "https://github.com/Caloma11/clipboard-overflow",
+    "default_locale": "en",
     "options_ui": {
         "page": "options.html",
         "open_in_tab": false
