@@ -10,7 +10,9 @@ Chrome extension for copying snippets of code from Stack Overflow without manual
 
 <h2>Installation</h2>
 
-– install it from source:
+- Install it from the <a href="https://chrome.google.com/webstore/detail/niidcejebmapmgohjfhajoiaiodalmck/">Chrome Web Store</a>.
+
+– Install it from source:
 
 clone/download this repo,
 open Chrome and go to chrome://chrome/extensions/,
