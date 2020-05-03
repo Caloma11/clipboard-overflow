@@ -21,6 +21,6 @@ click "Load unpacked extension",
 select the extension folder in this repo.
 
 <h4>Some URLs to try it on:</h4>
-<li><a href="https://stackoverflow.com/questions/897366/how-do-pointer-to-pointers-work-in-c">https://stackoverflow.com/questions/897366/how-do-pointer-to-pointers-work-in-c</a></li>
-<li><a href="https://stackoverflow.com/questions/31163110/ruby-filtering-array-of-hash">https://stackoverflow.com/questions/31163110/ruby-filtering-array-of-hash</a></li>
-<li><a href="https://stackoverflow.com/questions/10487316/best-way-to-iterate-through-a-perl-array">https://stackoverflow.com/questions/10487316/best-way-to-iterate-through-a-perl-array</a></li>
+<li><a target="_blank"  href="https://stackoverflow.com/questions/897366/how-do-pointer-to-pointers-work-in-c">https://stackoverflow.com/questions/897366/how-do-pointer-to-pointers-work-in-c</a></li>
+<li><a target="_blank" href="https://stackoverflow.com/questions/31163110/ruby-filtering-array-of-hash">https://stackoverflow.com/questions/31163110/ruby-filtering-array-of-hash</a></li>
+<li><a target="_blank" href="https://stackoverflow.com/questions/10487316/best-way-to-iterate-through-a-perl-array">https://stackoverflow.com/questions/10487316/best-way-to-iterate-through-a-perl-array</a></li>
